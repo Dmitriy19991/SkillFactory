@@ -3,13 +3,6 @@ from extensions import APIException, Convertor
 from config import TOKEN, exchanges
 import traceback
 
-exchanges = {
-    'доллар': 'USD',
-    'евро': 'EUR',
-    'рубль': 'RUB'
-}
-TOKEN = "6081170515:AAEZElid10w1nhYwNjxO3hO-prUHfiMTbPc"
-
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start', 'help'])
